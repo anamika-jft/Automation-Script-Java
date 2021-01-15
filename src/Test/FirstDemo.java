@@ -37,7 +37,10 @@ public class FirstDemo {
         driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS) ;
 //        WebElement elem = driver.findElement(By.xpath("//span[@id='triggerSelectButton']")); //*[@id="category_select__classCode"]/div[1]/div/div[2]
 //        driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS) ;
-//        driver.findElement(By.xpath("//*[@id=\"category_select__classCode\"]/div[1]/div/div[2]")).click();
+        WebElement wele = driver.findElement(By.id("//span[@id='triggerSelectButton']"));
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].click()", wele);
+      //  driver.findElement(By.xpath("//span[@id='triggerSelectButton']")).click();
 //        driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS) ;
     //   driver.findElement(By.xpath("driver.findElement(By.xpath(\"//*[@id=\\\"category_select__classCode\\\"]/div[1]/div/div[2]\")).click();")).click();
 //        driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS) ;
