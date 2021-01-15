@@ -20,6 +20,7 @@ public class FirstDemo {
 
         System.out.println(driver.getTitle());
         driver.manage().window().maximize();
+        
 
         driver.findElement(By.id("signIn-Email")).sendKeys("admin+markel@qbisins.com");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS) ;

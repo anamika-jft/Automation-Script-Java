@@ -33,6 +33,7 @@ public class OwnerStaff {
 //        WebElement ele1 = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]/div[1]/div[1]/span[1]"));
 //        JavascriptExecutor jse = (JavascriptExecutor)driver;
 //        jse.executeScript("arguments[0].click()", ele1);
+
         driver.findElement(By.xpath("//span[contains(text(),'Add owner')]")).click();
         driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//div/input[@id='defaultCommission']")).sendKeys("30");

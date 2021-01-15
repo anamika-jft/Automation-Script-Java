@@ -14,6 +14,7 @@ public class InsuredContactphoneChangeEndorse {
         System.setProperty("webdriver.chrome.driver", "/home/jft-/Downloads/chromedriver/chromedriver");
         WebDriver driver = new ChromeDriver();
 
+
         driver.get("https://dev.qbis.co");
         driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
         System.out.println(driver.getTitle());
