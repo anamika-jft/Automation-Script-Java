@@ -29,7 +29,7 @@ public class BusinessNameChangeEndorse
         driver.manage().timeouts().implicitlyWait(220, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//div[contains(text(),'Policies')]")).click();
         driver.manage().timeouts().implicitlyWait(220, TimeUnit.SECONDS);
-        WebElement wele = driver.findElement(By.xpath("//span[contains(text(),'AK_151_7 >> Policy')]"));
+        WebElement wele = driver.findElement(By.xpath("//span[contains(text(),'Policy')]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].click()", wele);
         // driver.findElement(By.xpath("//span[contains(text(),'AK_141_4 >> QUOTE CHECK')]")).click();
